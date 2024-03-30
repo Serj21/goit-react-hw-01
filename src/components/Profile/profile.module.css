@@ -1,0 +1,52 @@
+.card_wrapper {
+  border: 2px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.img_wrapper {
+  background-color: rgb(49, 48, 48);
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.user_name {
+  margin: 0 auto;
+  color: black;
+  font-weight: bold;
+}
+.user_data {
+  margin: 0 auto;
+  color: gray;
+}
+.profile_list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.list_item {
+  background-color: rgb(218, 214, 214);
+  border: 2px solid gray;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 5px;
+}
+.count {
+  font-weight: bold;
+}
