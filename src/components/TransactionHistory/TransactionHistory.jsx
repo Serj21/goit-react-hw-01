@@ -1,11 +1,12 @@
 import PropTypes from "prop-types";
 import s from "./TransactionHistory.module.css";
+import clsx from "clsx";
 
 const TransactionHistory = ({ items }) => {
   return (
-    <table>
+    <table className={s.table}>
       <thead>
-        <tr>
+        <tr className={s.header_table}>
           <th>Type</th>
           <th>Amount</th>
           <th>Currency</th>
@@ -14,10 +15,18 @@ const TransactionHistory = ({ items }) => {
 
       <tbody>
         {items.map((transactions) => (
-          <tr key={transactions.id}>
-            <td>{transactions.type}</td>
-            <td>{transactions.amount}</td>
-            <td>{transactions.currency}</td>
+          <tr
+            key={transactions.id}
+            className={clsx({
+              [s.payment]: transactions.type === "Payment",
+              [s.withdrawal]: transactions.type === "Withdrawal",
+              [s.invoice]: transactions.type === "Invoice",
+              [s.deposit]: transactions.type === "Deposit",
+            })}
+          >
+            <td className={s.cell}>{transactions.type}</td>
+            <td className={s.cell}>{transactions.amount}</td>
+            <td className={s.cell}>{transactions.currency}</td>
           </tr>
         ))}
       </tbody>

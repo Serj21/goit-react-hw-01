@@ -2,6 +2,8 @@
   border: 2px solid black;
   border-radius: 10px;
   overflow: hidden;
+  margin: 0 auto;
+  width: 300px;
 }
 
 .card {
@@ -28,13 +30,13 @@
   color: gray;
 }
 .profile_list {
-  margin: 0 auto;
   padding: 0;
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: 10px 0 0 0;
 }
 .list_item {
   background-color: rgb(218, 214, 214);

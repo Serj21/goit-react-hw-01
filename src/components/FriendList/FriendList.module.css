@@ -1,0 +1,38 @@
+.list {
+  padding: 20px 0;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+}
+.list_item {
+  border: 2px black solid;
+  border-radius: 5px;
+  padding: 7px;
+}
+.item_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+img {
+  margin-bottom: 5px;
+}
+.item_wrapper .name {
+  margin: 0;
+  font-weight: bold;
+}
+.online {
+  margin: 0 auto;
+  color: green;
+}
+
+.offline {
+  margin: 0 auto;
+  color: red;
+}
